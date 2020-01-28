@@ -1,0 +1,594 @@
+body {
+  margin: 0px;
+  padding: 0pt;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #fff;
+
+  background-color: white;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-logo,
+.footer-logo {
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+}
+
+.header-logo:hover,
+.footer-logo:hover {
+  background-color: #ca2c37;
+}
+
+.site-navigation a {
+  color: #fff;
+}
+
+.site-navigation li{
+  list-style: none;
+}
+
+.site-navigation li:hover {
+  background-color: #212a3a;
+}
+
+.site-navigation li:active {
+  background-color: #161d29;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.top-menu,
+.site-navigation {
+  background-color: #32425c;
+}
+
+.top-menu a {
+  color: #fff;
+}
+.make-order {
+  width: 150px;
+  height: 42px;
+  line-height: 18px;
+  background-color: #63a63e;
+}
+
+.make-order:hover {
+  line-height: 18px;
+  background-color: #5fbb2d;
+}
+
+.make-order:active {
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 18px;
+  background-color: #518534;
+}
+
+.header-info {
+  font-size: 17px;
+  line-height: 24px;
+  background-color: #f4f7f9;
+}
+
+.header-info p:first-child {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 23px;
+  text-align: left;
+  color: #ee3643;
+}
+
+.tel-number {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.address {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.account a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000;
+}
+
+.account a:hover {
+  color: #ee3643;
+}
+
+.account a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.my-orders,
+.my-account {
+  font-size: 16px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.my-orders:hover,
+.my-account:hover {
+  color: #ee3643;
+}
+
+.my-orders:active,
+.my-account:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
+/* Промо блок */
+.promo-block {
+  width: 300px;
+  height: 123px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.promo-block a {
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.promo-block a:hover,
+.promo-block a:focus {
+  background-color: #000000;
+  opacity: 0.2;
+  color: #ffffff;
+}
+
+.promo-block a:active {
+  background-color: #000000;
+  opacity: 0.3;
+  color: #ffffff;
+}
+
+.button-promo {
+  width: 135px;
+  height: 38px;
+  opacity: 0.1;
+  background-color: #000000;
+}
+
+/* .new-flag {
+  position: relative;
+  left: 77px;
+} */
+
+.yellow-block {
+  background-color: #ffbf47;
+}
+
+.yellow-block-delivery {
+  background-color: #ffcf47;
+}
+
+.blue-block {
+  background-color: #3bbce3;
+}
+
+.purpl-block {
+  background-color: #dc91d8;
+}
+
+.green-block {
+  background-color: #8ed78f;
+}
+
+/* Популярные товары */
+
+.popular-products {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+
+.popular-products-title {
+  font-size: 30px;
+  line-height: 21px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #000;
+}
+.popular-products-button {
+  width: 253px;
+  height: 38px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  margin-top: 25px;
+  margin-right: 24px;
+}
+
+.popular-list,
+.catalog-list {
+  list-style: none;
+}
+
+.card {
+  font-family: "PT Sans", Arial, sans-serif;;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.old-price {
+  font-size: 17px;
+  color:  #c5c5c5;
+  text-decoration: line-through;
+  text-align: center;
+}
+
+.new-price {
+  width: 140px;
+  height: 40px;
+  background-color: #ee3643;
+  color: #fff;
+  font-size: 17px;
+}
+
+.button-buy,
+.add-to-bookmarks {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000
+}
+
+.button-buy {
+  background-color: #63a63e;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.button-buy:hover,
+.button-buy:focus {
+  background-color: #5fbb2d;
+}
+
+.button-buy:active {
+  background-color: #518534;
+}
+
+.add-to-bookmarks {
+  color: #32425c;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 3px solid #63a63e;
+}
+
+.add-to-bookmarks:hover,
+.add-to-bookmarks:focus {
+  color: #32425c;
+  border: 3px solid #32425c;
+}
+
+.add-to-bookmarks:active {
+  color: #32425c;
+  opacity: 0.3;
+  border: 3px solid #32425c;
+  opacity: 0.3;
+}
+
+/* Производители */
+
+.brands-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.all-brands-button {
+  width: 253px;
+  background-color: #ee3643;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.brands-list {
+  list-style: none;
+}
+
+.brands-list .brand:active {
+  opacity: 0.3;
+}
+
+.services {
+  width: 1200px;
+  background-color: #f4f7f9;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: PTSans, sans-serif;
+  color: #000;
+}
+
+.services-title {
+  text-transform: uppercase;
+  font-family: "Cuprum", Arial, sans-serif;
+  color: #000;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.services-navigation button {
+  width: 240px;
+  height: 61px;
+  background-color: #32425c;
+  color: #fff;
+  border: none;
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+}
+
+.services-info {
+  list-style: none;
+}
+
+.service-item h3 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 36px;
+  text-align: left;
+  color: #32425c;
+  line-height: 36px;
+}
+
+.credit-button {
+  width: 195px;
+  height: 38px;
+  color: #fff;
+  background-color: #ff5357;
+}
+
+/* О компании */
+.about-company-title {
+  text-transform: uppercase;
+  font-family: "Cuprum", Arial, sans-serif;
+  color: #000;
+  font-size: 30px;
+  line-height: 30px;
+}
+.about-company p,
+.contacts p {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+}
+
+.about-company li {
+  list-style: none;
+  color: #000;
+} 
+
+.button-about-company {
+  width: 220px;
+  height: 38px;
+  color: #fff;
+  background-color: #ee3643;
+}
+
+.contacts-title {
+  text-transform: uppercase;
+  font-family: "Cuprum", Arial, sans-serif;
+  color: #000;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.button-contacts {
+  width: 300px;
+  height: 38px;
+  color: #fff;
+  background-color: #ee3643;
+}
+
+.button-about-company:hover,
+.button-contacts:hover {
+  background-color: #ca2c37;
+}
+
+.button-about-company:active,
+.button-contacts:active {
+  background-color: #ba2732;
+}
+
+.footer-top {
+  background-color: #32425c;
+}
+
+.footer-nav-item{
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+}
+
+.footer-address {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+}
+
+footer li {
+  list-style: none;
+}
+
+.footer-catalog-item {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffd180;
+}
+
+.footer-nav-item:hover,
+.footer-catalog-item:hover,
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.footer-nav-item:active {
+  color: rgba(241, 245, 247, 0.5);
+}
+
+.footer-catalog-item:active {
+  color: rgba(255, 209, 128, 0.5);
+}
+
+.footer-contacts {
+  font-size: 16px;
+  color: #fff;
+  background-color: #293449;
+}
+
+.social-links a {
+  color: #fff;
+}
+
+.contact-link {
+  color: #ffd180;
+}
+
+.contact-link:active {
+  color: #ee3643;
+} 
+
+
+/* Каталог */
+.catalog-name {
+  color: #32425c;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.breadcrumb-list {
+  list-style: none;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.breadcrumb-link {
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sorting-list {
+  list-style: none;
+}
+
+.sorting-item {
+  color: #000000;
+  opacity: 0.3;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sorting-item-current {
+  color: #ee3643;
+}
+
+.sorting-title {
+  color: #000000;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.filter-name {
+  color: #000000;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.price-filter {
+  color: black;
+}
+
+.brands-filter,
+.battery-filter {
+  color: black;
+  list-style: none;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+}
+
+.filter-button {
+  color: #000000;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.page-list {
+  list-style: none;
+}
+
+.page-item {
+  color: #000;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.page-item-current {
+  color: #fff;
+  background-color: #ee3643;
+}
+
+.about-perforators {
+  width: 1200px;
+  height: 261px;
+  color: #000;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: left;
+  background-color: #f4f7f9;
+}
+
+.about-perforators-title {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+}
+
