@@ -32,25 +32,25 @@ a {
   background-color: #ca2c37;
 }
 
-.site-navigation a {
+.nav a {
   color: #fff;
 }
 
-.site-navigation li{
+.nav li{
   list-style: none;
 }
 
-.site-navigation li:hover {
+.nav li:hover {
   background-color: #212a3a;
 }
 
-.site-navigation li:active {
+.nav li:active {
   background-color: #161d29;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .top-menu,
-.site-navigation {
+.nav {
   background-color: #32425c;
 }
 
@@ -188,7 +188,7 @@ a {
   background-color: #3bbce3;
 }
 
-.purpl-block {
+.purple-block {
   background-color: #dc91d8;
 }
 
