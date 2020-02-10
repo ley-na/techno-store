@@ -176,24 +176,24 @@ a {
   left: 77px;
 } */
 
-.yellow-block {
+.materials-block {
   background-color: #ffbf47;
 }
 
-.yellow-block-delivery {
-  background-color: #ffcf47;
-}
-
-.blue-block {
+.instruments-block {
   background-color: #3bbce3;
 }
 
-.purple-block {
+.machinery-block {
   background-color: #dc91d8;
 }
 
-.green-block {
+.discounts-block {
   background-color: #8ed78f;
+}
+
+.delivery-block {
+  background-color: #ffcf47;
 }
 
 /* Популярные товары */
