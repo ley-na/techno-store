@@ -57,7 +57,9 @@
   </header>
   <main>
     <ul class="breadcrumbs">
-      <li class="breadcrumbs-limk"><a class="breadcrumbs-link-item icon-home" href="#"></a></li>
+      <li class="breadcrumbs-link"><a class="breadcrumbs-link-item icon-home" href="index.html">
+        <img src="./img/icons/icon-home.svg" alt="">
+      </a></li>
       <li class="breadcrumbs-link"><a class="breadcrumbs-link-item" href="#">Каталог</a></li>
       <li class="breadcrumbs-link"><a class="breadcrumbs-link-item" href="#">Инструмент</a></li>
       <li class="breadcrumbs-link">Перфораторы</li>
@@ -68,12 +70,16 @@
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <p class="sorting-header-title">Сортировка:</p>
         <ul class="sorting-header-list">
-          <li class="sorting-header-list-link"><a class="sorting-header-list-item sorting-item-current" href="">По цене</a></li>
-          <li class="sorting-header-list-link"><a class="sorting-header-list-item" href="">По типу</a></li>
-          <li class="sorting-header-list-link"><a class="sorting-header-list-item" href="">По функционалу</a></li>
+          <li class="sorting-header-link"><a class="sorting-header-item sorting-item-current" href="">По цене</a></li>
+          <li class="sorting-header-link"><a class="sorting-header-item" href="">По типу</a></li>
+          <li class="sorting-header-link"><a class="sorting-header-item" href="">По функционалу</a></li>
         </ul>
-        <a class="sorting-button-up" href="" aria-label="Вверх">▲</a>
-        <a class="sorting-button-down" href="" aria-label="Вниз">▼</a>
+        <a class="sorting-button-up" href="" aria-label="Вверх">
+          <img src="./img/icons/icon-up-dir.svg" alt="">
+        </a>
+        <a class="sorting-button-down" href="" aria-label="Вниз">
+          <img src="./img/icons/icon-down-dir.svg" alt="">
+        </a>
       </section>
       <section class="sorting-item">
         <!-- Форма производители -->
@@ -91,24 +97,24 @@
             <legend class="brends-filter-title">Производители:</legend>
             <ul class="brands-filter-list">
               <li class="brands-filter-item">
-                <input class="brands-filter-input" type="checkbox" name="bosch" id="bosch" checked>
-                <label for="bosch">Bosch</label>
+                <input class="filter-input filter-checkbox" type="checkbox" name="bosch" id="bosch" checked>
+                <label class="filter-label filter-label-checkbox" for="bosch">Bosch</label>
               </li>
               <li class="brands-filter-item">
-                <input class="brands-filter-input" type="checkbox" name="interskol" id="interskol">
-                <label for="interskol">Interskol</label>
+                <input class="filter-input filter-checkbox" type="checkbox" name="interskol" id="interskol">
+                <label class="filter-label filter-label-checkbox" for="interskol">Interskol</label>
               </li>
               <li class="brands-filter-item">
-                <input class="brands-filter-input" type="checkbox" name="makita" id="makita" checked>
-                <label for="makita">Makita</label>
+                <input class="filter-input filter-checkbox" type="checkbox" name="makita" id="makita" checked>
+                <label class="filter-label filter-label-checkbox" for="makita">Makita</label>
               </li>
               <li class="brands-filter-item">
-                <input class="brands-filter-input" type="checkbox" name="dewalt" id="dewalt">
-                <label for="dewalt">Dewalt</label>
+                <input class="filter-input filter-checkbox" type="checkbox" name="dewalt" id="dewalt">
+                <label class="filter-label filter-label-checkbox" for="dewalt">Dewalt</label>
               </li>
               <li class="brands-filter-item">
-                <input class="brands-filter-input" type="checkbox" name="hitachi" id="hitachi">
-                <label for="hitachi">Hitachi</label>
+                <input class="filter-input filter-checkbox" type="checkbox" name="hitachi" id="hitachi">
+                <label class="filter-label filter-label-checkbox" for="hitachi">Hitachi</label>
               </li>
             </ul>
           </fieldset>
@@ -121,12 +127,12 @@
             <legend class="battery-filter-title">Питание:</legend>
             <ul class="battery-filter-list">
               <li  class="battery-filter-item">
-                <input class="battery-filter-input" type="radio" name="battery" id="battery" checked>
-                <label for="battery">Аккумуляторные</label>
+                <input class="filter-input filter-radio" type="radio" name="battery" id="battery" checked>
+                <label class="filter-label filter-label-radio" for="battery">Аккумуляторные</label>
               </li>
               <li  class="battery-filter-item">
-                <input class="battery-filter-input" type="radio" name="electro" id="electro">
-                <label for="electro">Сетевые</label>
+                <input class="filter-input filter-radio" type="radio" name="electro" id="electro">
+                <label class="filter-label filter-label-radio" for="electro">Сетевые</label>
               </li>
             </ul>
           </fieldset>

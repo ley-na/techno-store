@@ -84,8 +84,12 @@
           <a class="slider-button button-red" href="catalog.html">Открыть каталог</a>
         </div>
         <div class="slider-controls">
-          <button type="button" class="slider-controls-arrow arrow-left">влево</button>
-          <button type="button" class="slider-controls-arrow arrow-right">вправо</button>
+          <button type="button" class="slider-controls-arrow arrow-left" aria-label="Влево">
+            <img src="./img/icons/icon-left.svg" alt="">
+          </button>
+          <button type="button" class="slider-controls-arrow arrow-right" aria-label="Вправо">
+            <img src="./img/icons/icon-right.svg" alt="">
+          </button>
         </div>
       </div>
       <!-- Слайдер -->
@@ -236,9 +240,7 @@
         заехав в наш офис:</p>
       <a class="contacts-map-link" href=""><img src="./img/map/map.png" width="300" height="158"
           alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
-      <div class="contacts-button">
-        <a class="contacts-button-item" href="">Заблудились? Напишите нам!</a>
-      </div>
+      <a class="contacts-button" href="">Заблудились? Напишите нам!</a>
       <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="contacts-form-item">
           <label for="name">Ваше имя</label>

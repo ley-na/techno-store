@@ -19,32 +19,33 @@ a {
   text-decoration: none;
 }
 
-.header-logo,
-.footer-logo {
+.logo {
   color: #fff;
   text-transform: uppercase;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
 }
 
-.header-logo:hover,
-.footer-logo:hover {
+.logo:hover,
+.button-red:hover {
   background-color: #ca2c37;
 }
 
-.nav a {
-  color: #fff;
+.logo:active,
+.button-red:active {
+  background-color: #ba2732;
 }
 
-.nav li{
+.nav-link-item {
+  color: #fff;
   list-style: none;
 }
 
-.nav li:hover {
+.nav-link-item:hover {
   background-color: #212a3a;
 }
 
-.nav li:active {
+.nav-link-item:active {
   background-color: #161d29;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -52,24 +53,33 @@ a {
 .top-menu,
 .nav {
   background-color: #32425c;
+  padding: 0;
+  margin: 0;
 }
 
 .top-menu a {
   color: #fff;
 }
-.make-order {
+
+.top-menu-bookmarks:active,
+.top-menu-basket:active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #161d29;
+}
+
+.top-menu-order {
   width: 150px;
   height: 42px;
   line-height: 18px;
   background-color: #63a63e;
 }
 
-.make-order:hover {
+.top-menu-order:hover {
   line-height: 18px;
   background-color: #5fbb2d;
 }
 
-.make-order:active {
+.top-menu-order:active {
   color: rgba(255, 255, 255, 0.5);
   line-height: 18px;
   background-color: #518534;
@@ -81,7 +91,7 @@ a {
   background-color: #f4f7f9;
 }
 
-.header-info p:first-child {
+.header-info-title {
   font-size: 16px;
   font-weight: normal;
   font-style: italic;
@@ -94,6 +104,7 @@ a {
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
+  border: solid 3px #ffffff;
 }
 
 .address {
@@ -103,18 +114,26 @@ a {
   color: #32425c;
 }
 
-.account a {
+.profile a {
   font-size: 21px;
   line-height: 21px;
   color: #000;
 }
 
-.account a:hover {
+.profile a:hover {
+  background-color: white;
   color: #ee3643;
 }
 
-.account a:active {
+.profile a:active {
+  background-color: white;
   color: rgba(0, 0, 0, 0.3);
+}
+
+.profile-nav {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 .my-orders,
@@ -122,6 +141,8 @@ a {
   font-size: 16px;
   color: #32425c;
   text-decoration: underline;
+  margin: 0;
+  padding: 0;
 }
 
 .my-orders:hover,
@@ -196,13 +217,18 @@ a {
   background-color: #ffcf47;
 }
 
+.button-red {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
 /* Популярные товары */
 
 .popular-products {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-left: 30px;
 }
 
 .popular-products-title {
@@ -224,9 +250,10 @@ a {
   margin-right: 24px;
 }
 
-.popular-list,
-.catalog-list {
+.popular-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .card {
@@ -236,14 +263,14 @@ a {
   color: #000000;
 }
 
-.old-price {
+.card-old-price {
   font-size: 17px;
   color:  #c5c5c5;
   text-decoration: line-through;
   text-align: center;
 }
 
-.new-price {
+.card-new-price {
   width: 140px;
   height: 40px;
   background-color: #ee3643;
@@ -251,44 +278,44 @@ a {
   font-size: 17px;
 }
 
-.button-buy,
-.add-to-bookmarks {
+.card-button-buy,
+.card-button-add {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
   color: #000
 }
 
-.button-buy {
+.card-button-buy {
   background-color: #63a63e;
   color: #ffffff;
   font-size: 14px;
   text-transform: uppercase;
 }
 
-.button-buy:hover,
-.button-buy:focus {
+.card-button-buy:hover,
+.card-button-buy:focus {
   background-color: #5fbb2d;
 }
 
-.button-buy:active {
+.card-button-buy:active {
   background-color: #518534;
 }
 
-.add-to-bookmarks {
+.card-button-add {
   color: #32425c;
   font-size: 14px;
   text-transform: uppercase;
   border: 3px solid #63a63e;
 }
 
-.add-to-bookmarks:hover,
-.add-to-bookmarks:focus {
+.card-button-add:hover,
+.card-button-add:focus {
   color: #32425c;
   border: 3px solid #32425c;
 }
 
-.add-to-bookmarks:active {
+.card-button-add:active {
   color: #32425c;
   opacity: 0.3;
   border: 3px solid #32425c;
@@ -304,7 +331,7 @@ a {
   color: #32425c;
 }
 
-.all-brands-button {
+.brands-button {
   width: 253px;
   background-color: #ee3643;
   color: #ffffff;
@@ -315,7 +342,12 @@ a {
   list-style: none;
 }
 
-.brands-list .brand:active {
+.brands-list-item:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.brands-list-item:active {
+  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
   opacity: 0.3;
 }
 
@@ -336,13 +368,23 @@ a {
   line-height: 30px;
 }
 
-.services-navigation button {
+.services-navigation-button {
   width: 240px;
   height: 61px;
   background-color: #32425c;
+  font-weight: bold;
   color: #fff;
   border: none;
   box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+}
+
+.services-navigation-button:hover {
+  background-color: #293449;
+}
+
+.services-navigation-button:active {
+  background-color: white;
+  color: #32425c;
 }
 
 .services-info {
@@ -381,12 +423,12 @@ a {
   color: #000000;
 }
 
-.about-company li {
+.about-company-list {
   list-style: none;
   color: #000;
 } 
 
-.button-about-company {
+.about-company-button {
   width: 220px;
   height: 38px;
   color: #fff;
@@ -401,20 +443,20 @@ a {
   line-height: 30px;
 }
 
-.button-contacts {
+.contacts-button {
   width: 300px;
   height: 38px;
   color: #fff;
   background-color: #ee3643;
 }
 
-.button-about-company:hover,
-.button-contacts:hover {
+.about-company-button:hover,
+.contacts-button:hover {
   background-color: #ca2c37;
 }
 
-.button-about-company:active,
-.button-contacts:active {
+.about-company-button:active,
+.contacts-button:active {
   background-color: #ba2732;
 }
 
@@ -428,7 +470,8 @@ a {
   color: #f1f5f7;
 }
 
-.footer-address {
+.footer-contacts-address,
+.footer-contacts-tel {
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
@@ -444,9 +487,10 @@ footer li {
   color: #ffd180;
 }
 
-.footer-nav-item:hover,
-.footer-catalog-item:hover,
-.contact-link:hover {
+.footer-nav-link:hover,
+.footer-catalog-link:hover,
+.contacts-feedback-link:hover,
+.contacts-developer-link:hover {
   text-decoration: underline;
 }
 
@@ -464,49 +508,64 @@ footer li {
   background-color: #293449;
 }
 
-.social-links a {
+.social-link {
   color: #fff;
 }
 
-.contact-link {
+.social-link:active {
+  background-color: #ee3643;
+}
+
+.social-link:hover {
+  background-color: #ee3643;
+}
+
+.contacts-feedback-link,
+.contacts-developer-link {
   color: #ffd180;
 }
 
-.contact-link:active {
+.contacts-feedback-link:active,
+.contacts-developer-link:active {
   color: #ee3643;
 } 
 
 
 /* Каталог */
-.catalog-name {
+.breadcrumbs {
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs-link {
+  list-style: none;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.catalog-title {
   color: #32425c;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.breadcrumb-list {
-  list-style: none;
-  font-family: "PT Sans", Arial, sans-serif;
-  color: #000000;
-  font-size: 13px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.breadcrumb-link {
-  font-family: "PT Sans", Arial, sans-serif;
-  color: #000000;
-  font-size: 13px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.sorting-list {
+.sorting-header-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.sorting-item {
+.sorting-header-item {
+  border-bottom: 1px dashed #ee3643;
   color: #000000;
   opacity: 0.3;
   font-family: "PT Sans", Arial, sans-serif;
@@ -515,11 +574,17 @@ footer li {
   text-transform: uppercase;
 }
 
+.sorting-header-item:hover {
+  border-bottom: 1px solid #ee3643;
+  color: #000;
+}
+
 .sorting-item-current {
+  border-bottom: 0;
   color: #ee3643;
 }
 
-.sorting-title {
+.sorting-header-title {
   color: #000000;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -558,11 +623,12 @@ footer li {
   text-transform: uppercase;
 }
 
-.page-list {
+.pagination {
   list-style: none;
 }
 
-.page-item {
+.pagination-link-item {
+  border: solid 1px #e5e5e5;
   color: #000;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -570,12 +636,20 @@ footer li {
   text-transform: uppercase;
 }
 
-.page-item-current {
+.pagination-link-item:hover {
+  border: solid 1px #bdc6ca;
+}
+
+.pagination-link-item:active {
+  border: solid 1px #ee3643;
+}
+
+.pagination-current {
   color: #fff;
   background-color: #ee3643;
 }
 
-.about-perforators {
+.about {
   width: 1200px;
   height: 261px;
   color: #000;
@@ -586,7 +660,7 @@ footer li {
   background-color: #f4f7f9;
 }
 
-.about-perforators-title {
+.about-title {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
