@@ -8,7 +8,7 @@ body {
   font-weight: 700;
   color: #fff;
 
-  background-color: white;
+  background-color: #fff;
 }
 
 .visually-hidden {
@@ -26,13 +26,11 @@ a {
   background-color: #ee3643;
 }
 
-.logo:hover,
-.button-red:hover {
+.logo:hover {
   background-color: #ca2c37;
 }
 
-.logo:active,
-.button-red:active {
+.logo:active {
   background-color: #ba2732;
 }
 
@@ -50,7 +48,12 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.top-menu,
+.top-menu {
+  background-color: #32425c;
+  padding: 0;
+  margin: 0;
+}
+
 .nav {
   background-color: #32425c;
   padding: 0;
@@ -61,15 +64,20 @@ a {
   color: #fff;
 }
 
-.top-menu-bookmarks:active,
+.top-menu-bookmarks:active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #161d29;
+}
+
 .top-menu-basket:active {
   color: rgba(255, 255, 255, 0.6);
   background-color: #161d29;
 }
 
+
 .top-menu-order {
-  width: 150px;
-  height: 42px;
+  min-width: 150px;
+  min-height: 42px;
   line-height: 18px;
   background-color: #63a63e;
 }
@@ -121,12 +129,12 @@ a {
 }
 
 .profile a:hover {
-  background-color: white;
+  background-color: #fff;
   color: #ee3643;
 }
 
 .profile a:active {
-  background-color: white;
+  background-color: #fff;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -136,7 +144,22 @@ a {
   text-decoration: none;
 }
 
-.my-orders,
+.my-orders {
+  font-size: 16px;
+  color: #32425c;
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
+}
+
+.my-orders:hover {
+  color: #ee3643;
+}
+
+.my-orders:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
 .my-account {
   font-size: 16px;
   color: #32425c;
@@ -145,12 +168,10 @@ a {
   padding: 0;
 }
 
-.my-orders:hover,
 .my-account:hover {
   color: #ee3643;
 }
 
-.my-orders:active,
 .my-account:active {
   color: rgba(50, 66, 92, 0.3);
 }
@@ -174,22 +195,22 @@ a {
 
 .promo-block a:hover,
 .promo-block a:focus {
-  background-color: #000000;
+  background-color: #000;
   opacity: 0.2;
   color: #ffffff;
 }
 
 .promo-block a:active {
-  background-color: #000000;
+  background-color: #000;
   opacity: 0.3;
   color: #ffffff;
 }
 
-.button-promo {
-  width: 135px;
-  height: 38px;
+.promo-button {
+  min-width: 135px;
+  min-height: 38px;
   opacity: 0.1;
-  background-color: #000000;
+  background-color: #000;
 }
 
 /* .new-flag {
@@ -217,10 +238,18 @@ a {
   background-color: #ffcf47;
 }
 
-.button-red {
+.button {
   color: #fff;
   text-transform: uppercase;
   background-color: #ee3643;
+}
+
+.button:hover {
+  background-color: #ca2c37;
+}
+
+.button:active {
+  background-color: #ba2732;
 }
 
 /* Популярные товары */
@@ -260,7 +289,7 @@ a {
   font-family: "PT Sans", Arial, sans-serif;;
   font-size: 18px;
   font-weight: 700;
-  color: #000000;
+  color: #000;
 }
 
 .card-old-price {
@@ -278,7 +307,13 @@ a {
   font-size: 17px;
 }
 
-.card-button-buy,
+.card-button-buy {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000
+}
+
 .card-button-add {
   text-transform: uppercase;
   font-size: 14px;
@@ -332,7 +367,7 @@ a {
 }
 
 .brands-button {
-  width: 253px;
+  min-width: 253px;
   background-color: #ee3643;
   color: #ffffff;
   text-transform: uppercase;
@@ -372,7 +407,10 @@ a {
   width: 240px;
   height: 61px;
   background-color: #32425c;
-  font-weight: bold;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
   color: #fff;
   border: none;
   box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
@@ -383,7 +421,7 @@ a {
 }
 
 .services-navigation-button:active {
-  background-color: white;
+  background-color: #fff;
   color: #32425c;
 }
 
@@ -400,8 +438,8 @@ a {
 }
 
 .credit-button {
-  width: 195px;
-  height: 38px;
+  min-width: 195px;
+  min-height: 38px;
   color: #fff;
   background-color: #ff5357;
 }
@@ -414,13 +452,12 @@ a {
   font-size: 30px;
   line-height: 30px;
 }
-.about-company p,
-.contacts p {
+.about-company p {
   font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   text-align: left;
-  color: #000000;
+  color: #000;
 }
 
 .about-company-list {
@@ -429,10 +466,18 @@ a {
 } 
 
 .about-company-button {
-  width: 220px;
-  height: 38px;
+  min-width: 220px;
+  min-height: 38px;
   color: #fff;
   background-color: #ee3643;
+}
+
+.about-company-button:hover {
+  background-color: #ca2c37;
+}
+
+.about-company-button:active {
+  background-color: #ba2732;
 }
 
 .contacts-title {
@@ -443,21 +488,35 @@ a {
   line-height: 30px;
 }
 
+.contacts-content {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: left;
+  color: #000;
+}
+
 .contacts-button {
-  width: 300px;
-  height: 38px;
+  min-width: 300px;
+  min-height: 38px;
   color: #fff;
   background-color: #ee3643;
 }
 
-.about-company-button:hover,
 .contacts-button:hover {
   background-color: #ca2c37;
 }
 
-.about-company-button:active,
 .contacts-button:active {
   background-color: #ba2732;
+}
+
+.contacts-form-button {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #fff;
 }
 
 .footer-top {
@@ -470,7 +529,12 @@ a {
   color: #f1f5f7;
 }
 
-.footer-contacts-address,
+.footer-contacts-address {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+}
+
 .footer-contacts-tel {
   font-size: 18px;
   line-height: 24px;
@@ -520,21 +584,26 @@ footer li {
   background-color: #ee3643;
 }
 
-.contacts-feedback-link,
+.contacts-feedback-link {
+  color: #ffd180;
+}
+
+.contacts-feedback-link:active {
+  color: #ee3643;
+} 
+
 .contacts-developer-link {
   color: #ffd180;
 }
 
-.contacts-feedback-link:active,
 .contacts-developer-link:active {
   color: #ee3643;
 } 
 
-
 /* Каталог */
 .breadcrumbs {
   font-family: "PT Sans", Arial, sans-serif;
-  color: #000000;
+  color: #000;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -545,7 +614,7 @@ footer li {
 .breadcrumbs-link {
   list-style: none;
   font-family: "PT Sans", Arial, sans-serif;
-  color: #000000;
+  color: #000;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -566,7 +635,7 @@ footer li {
 
 .sorting-header-item {
   border-bottom: 1px dashed #ee3643;
-  color: #000000;
+  color: #000;
   opacity: 0.3;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -585,7 +654,7 @@ footer li {
 }
 
 .sorting-header-title {
-  color: #000000;
+  color: #000;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -593,7 +662,7 @@ footer li {
 }
 
 .filter-name {
-  color: #000000;
+  color: #000;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 30px;
@@ -601,22 +670,29 @@ footer li {
 }
 
 .price-filter {
-  color: black;
+  color: #000;
 }
 
-.brands-filter,
-.battery-filter {
-  color: black;
+.brands-filter {
+  color: #000;
   list-style: none;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
   text-transform: uppercase;
+}
 
+.battery-filter {
+  color: #000;
+  list-style: none;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .filter-button {
-  color: #000000;
+  color: #000;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -665,4 +741,3 @@ footer li {
   font-size: 30px;
   line-height: 30px;
 }
-
