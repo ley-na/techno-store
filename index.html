@@ -20,7 +20,11 @@
         </a>
         <form action="https://echo.htmlacademy.ru" method="get">
           <input type="search" name="search" id="search" class="search" placeholder="Поиск:">
-          <button type="submit" aria-label="Поиск"></button>
+          <button class="search-button" type="submit" aria-label="Поиск">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+              <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+            </svg>
+          </button>
         </form>
         <a class="top-menu-bookmarks" href="">Закладки: <span class="bookmarks-count">0</span></a>
         <a class="top-menu-basket" href="">Корзина: <span class="basket-count">0</span></a>
@@ -58,9 +62,8 @@
     <section class="promo center">
       <h2 class="visually-hidden">Категории товаров</h2>
       <div class="promo-block-top">
-        <div class="promo-block materials-block">
+        <div class="promo-block materials-block new">
           <h3 class="materials-block-title">Материалы</h3>
-          <!-- <img class="new-flag" src="img/new-flag.png" width="60" height="60" alt="новинка"> -->
           <img src="./img/icons/promo/icon-tin.svg" width="45" height="65" alt="материалы">
           <a class="promo-button" href="">На любой вкус</a>
         </div>
@@ -76,29 +79,36 @@
         </div>
       </div>
       <!-- Слайдер -->
-      <div class="promo-slider-container">
+      <div class="slider-container">
         <div class="slider">
-          <div class="slider-item">
-            <h3 class="slider-title uppercase">Дрели</h3>
-            <img src="./img/slider/slider-image-1.jpg" alt="">
-            <p class="slider-content">Соседям на радость!</p>
-            <a class="slider-button button" href="catalog.html">Открыть каталог</a>
-          </div>
-          <div class="visually-hidden">
-            <h3 class="slider-title uppercase">Перфораторы</h3>
-            <img src="./img/slider/slider-image-2.jpg" alt="">
-            <p class="slider-content">Настоящие мужские игрушки</p>
-            <a class="slider-button button" href="catalog.html">Открыть каталог</a>
-          </div>
+          <input class="" type="radio" id="btn-1" name="toggle" checked>
+          <input class="" type="radio" id="btn-2" name="toggle">
           <div class="slider-controls">
-            <button type="button" class="slider-controls-arrow arrow-left" aria-label="Влево">
-              <img src="./img/icons/icon-left.svg" alt="">
-            </button>
-            <button type="button" class="slider-controls-arrow arrow-right" aria-label="Вправо">
-              <img src="./img/icons/icon-right.svg" alt="">
-            </button>
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+          </div>
+          <label class="arrow-left" for="btn-1"></label>
+          <label class="arrow-right" for="btn-2"></label>
+          <div class="slider-slides">
+            <div class="slide" id="slider-slides-1">
+              <div class="slider-slides-content">
+                <img src="./img/slider/slider-image-1.jpg" alt="">
+                <h3 class="slider-title uppercase">Дрели</h3>
+                <p class="slider-content">Соседям на радость!</p>
+                <a class="slider-button button" href="catalog.html">Открыть каталог</a>
+              </div>
+            </div>
+            <div class="slide" id="slider-slides-2">
+              <div class="slider-slides-content">
+                <img src="./img/slider/slider-image-2.jpg" alt="">
+                <h3 class="slider-title uppercase">Перфораторы</h3>
+                <p class="slider-content">Настоящие мужские игрушки</p>
+                <a class="slider-button button" href="catalog.html">Открыть каталог</a>
+              </div>  
+            </div>
           </div>
         </div>
+        <!-- Конец слайдера -->
         <div class="promo-block-right">
           <div class="promo-block discounts-block">
             <h3 class="discounts-block-title">Скидки 50%</h3>
@@ -129,10 +139,8 @@
             <img src="./img/catalog/perforator-bfg-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
           </div>
           <a class="card-name" href=""><h3>Перфоратор BOSCH BFG 9000</h3></a>
-          <p>
-            <span class="card-old-price">32500 Р.</span>
-            <span class="card-new-price">25500 Р.</span>
-          </p>
+          <div class="card-old-price">32500 Р.</div>
+          <div class="card-new-price">25500 Р.</div>
         </li>
         <li class="card">
           <div class="card-buttons">
@@ -143,10 +151,8 @@
             <img src="./img/catalog/perforator-bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
           </div>
           <a class="card-name" href=""><h3>Перфоратор BOSCH BFG 3000</h3></a>
-          <p>
-            <span class="card-old-price">22500 Р.</span>
-            <span class="card-new-price">15500 Р.</span>
-          </p>
+          <div class="card-old-price">22500 Р.</div>
+          <div class="card-new-price">15500 Р.</div>
         </li>
         <li class="card">
           <div class="card-buttons">
@@ -157,12 +163,10 @@
             <img src="./img/catalog/perforator-bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
           </div>
           <a class="card-name" href=""><h3>Перфоратор BOSCH BFG 6000</h3></a>
-          <p>
-            <span class="card-old-price">30500 Р.</span>
-            <span class="card-new-price">25500 Р.</span>
-          </p>
+          <div class="card-old-price">30500 Р.</div>
+          <div class="card-new-price">25500 Р.</div>
         </li>
-        <li class="card">
+        <li class="card new">
           <div class="card-buttons">
             <a class="card-button-buy" href="">Купить</a>
             <a class="card-button-add" href="">В закладки</a>
@@ -171,9 +175,8 @@
             <img src="./img/catalog/perforator-bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
           </div>
           <a class="card-name" href=""><h3>Перфоратор BOSCH BFG 2000</h3></a>
-          <p>
-            <span class="card-new-price">12500 Р.</span>
-          </p>
+          <div class="card-old-price"></div>
+          <div class="card-new-price">12500 Р.</div>
         </li>
       </ul>
     </section>
@@ -194,45 +197,51 @@
         <li class="brands-list-link"><a class="brands-list-item" href=""><img src="./img/brands/metabo.png" width="204" height="69" alt="Metabo"></a></li>
       </ul>
     </section>
-    <section class="services">
-      <h2 class="services-title center">Сервисы</h2>
-      <p class="services-content center">Хороший интернет-магазин отличается от плохого не только ценами!
-        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-      <div class="services-container center">
-        <div class="services-navigation">
-          <button class="services-navigation-button services-button-current" type="button">Доставка</button>
-          <button class="services-navigation-button" type="button">Гарантия</button>
-          <button class="services-navigation-button" type="button">Кредит</button>
-        </div>
-        <ul class="services-info">
-          <li class="service-info-item">
-            <h3 class="services-info-title">Доставка</h3>
-            <p class="services-delivery-content">Мы с удовольствием доставим ваш товар прямо <br>
-              к вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем, <br>
-              поднимая его на ваш этаж!</p>
-            <img src="./img/services/delivery.png" alt="Доставка">
-          </li>
-          <li class="service-info-item">
-            <h3 class="services-info-title">Гарантия</h3>
-            <p class="services-guarantee-content">Если купленный у нас товар поломается или заискрит, <br>
-              а также в случае пожара, спровоцированного его возгоранием,
-              вы всегда можете быть уверены в нашей гарантии. Мы обменяем
-              сгоревший товар на новый. <br>
-              Дом уж восстановите как-нибудь сами.</p>
-            <img src="./img/services/guarantee.png" alt="Гарантия">
-          </li>
-          <li class="service-info-item">
-            <h3 class="services-info-title">Кредит</h3>
-            <p class="services-credit-content">Залезть в долговую яму стало проще! <br>
-              Кредитные консультанты придут вам на помощь.</p>
-            <img src="./img/services/credit.png" alt="Кредит">
-            <div class="credit-button button">
-              <a href="">Отправить заявку</a>
+    <section class="services-container">
+      <div class="services center">
+        <h2 class="services-title">Сервисы</h2>
+        <p class="services-content">Хороший интернет-магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <div class="services-slider">
+          <div class="services-navigation">
+            <input type="radio" id="button-1" name="services-toggle" checked >
+            <input type="radio" id="button-2" name="services-toggle" >
+            <input type="radio" id="button-3" name="services-toggle" >
+          </div>
+          <div class="services-toggles">
+            <label for="button-1">Доставка</label>
+            <label for="button-2">Гарантия</label>
+            <label for="button-3">Кредит</label>
+          </div>
+          <div class="services-info">
+            <div class="services-info-item delivery">
+              <h3 class="services-info-title">Доставка</h3>
+              <p class="services-delivery-content">Мы с удовольствием доставим ваш товар прямо <br>
+                к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем, <br>
+                поднимая его на ваш этаж!</p>
+              <img src="./img/services/delivery.png" alt="Доставка">
             </div>
-            
-          </li>
-        </ul>
+            <div class="services-info-item guarantee">
+              <h3 class="services-info-title">Гарантия</h3>
+              <p class="services-guarantee-content">Если купленный у нас товар поломается или заискрит, <br>
+                а также в случае пожара, спровоцированного его возгоранием,
+                вы всегда можете быть уверены в нашей гарантии. Мы обменяем
+                сгоревший товар на новый. <br>
+                Дом уж восстановите как-нибудь сами.</p>
+              <img src="./img/services/guarantee.png" alt="Гарантия">
+            </div>
+            <div class="services-info-item credit">
+              <h3 class="services-info-title">Кредит</h3>
+              <p class="services-credit-content">Залезть в долговую яму стало проще! <br>
+                Кредитные консультанты придут вам на помощь.</p>
+              <img src="./img/services/credit.png" alt="Кредит">
+              <div class="credit-button button">
+                <a href="">Отправить заявку</a>
+            </div>
+          </div>
+          </ul>
+        </div>
       </div>
     </section>
     <div class="company-info center">
@@ -313,17 +322,14 @@
         <ul class="footer-bottom-social">
           <li class="footer-social-link">
             <a class="social-link_vk" href="" aria-label="Вконтакте">
-              <img src="./img/icons/social/icon-vk.svg" alt="">
             </a>
           </li>
           <li class="footer-social-link">
             <a class="social-link_fb" href="" aria-label="Фейсбук">
-              <img src="./img/icons/social/icon-fb.svg" alt="">
             </a>
           </li>
           <li class="footer-social-link">
             <a class="social-link_inst" href="" aria-label="Инстаграм">
-              <img src="./img/icons/social/icon-inst.svg" alt="">
             </a>
           </li>
         </ul>
