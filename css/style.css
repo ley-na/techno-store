@@ -1272,8 +1272,8 @@ footer li {
 
 .footer-nav-link:hover,
 .footer-catalog-link:hover,
-.contacts-feedback-link:hover,
-.contacts-developer-link:hover {
+.footer-feedback-link:hover,
+.footer-developer-link:hover {
   text-decoration: underline;
 }
 
@@ -1377,6 +1377,7 @@ footer li {
 }
 
 .footer-feedback-link:active {
+  text-decoration: none;
   color: #ee3643;
 } 
 
