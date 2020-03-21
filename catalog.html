@@ -356,13 +356,18 @@
   </footer>
 
   <!-- Товар добавлен в корзину -->
-  <section class="modal visually-hidden">
-    <h2>Товар добавлен в корзину!</h2>
-    <ul>
-      <li><a href="">Оформить заказ</a></li>
-      <li><a href="catalog.html">Продолжить покупки</a></li>
-    </ul>
-    <button type="button" name="close">Закрыть</button>
+  <section class="modal modal-add-to-basket">
+      <div class="modal-title">
+        <img src="./img/icons/icon-mark.svg" alt="">
+        <h2>Товар добавлен в корзину!</h2>
+      </div>
+      <div class="modal-buttons-container">
+        <ul class="modal-buttons-list">
+          <li><a class="button button-red" href="">Оформить заказ</a></li>
+          <li><a class="button" href="catalog.html">Продолжить покупки</a></li>
+        </ul>
+      </div>
+      <button type="button" class="button-close" aria-label="Закрыть"></button>
   </section>
 </body>
 
