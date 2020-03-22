@@ -358,41 +358,70 @@ a {
   line-height: 21px;
 }
 
-.profile-user .account-link {
-  width: 205px;
-  padding-left: 37px;
-}
-
 .profile-user a {
   text-decoration: none;
   display: block;
-  padding: 12px;
   color: #000;
   background-color: #fff;
   outline: none;
 }
 
-.account-link svg {
-  position: absolute;
-  transform: translate(-32px, 0px);
+.account-link {
+  width: 225px;
+  padding: 12px 14px 11px 15px;
 }
 
-.logout-link svg {
-  transform: translate(2px, 1px);
+.logout-link {
+  padding: 12px 10px 11px 15px;
+}
+
+.account-link .account-link-icon {
+  position: relative;
+  top: 0;
+  left: -8px;
+}
+
+.account-link-icon {
+  opacity: 0.2;
+}
+
+.logout-link-icon {
+  opacity: 0.2;
+}
+
+.account-link-icon:hover {
+  opacity: 1;
+}
+
+.logout-link-icon:hover {
+  opacity: 1;
+}
+
+.account-link-icon:active {
+  opacity: 0.2;
+}
+
+.logout-link-icon:active {
+  opacity: 0.2;
+}
+
+.account-link-content {
+  margin: 0;
+  padding: 0;
 }
 
 .profile-nav {
   position: relative;
   list-style: none;
   display: flex;
-  padding-left: 17px;
+  padding-left: 19px;
   margin: 0;
   margin-top: 4px;
   font-size: 16px;
 }
 
 .profile-nav-orders {
-  margin-right: 33px;
+  margin-right: 32px;
 }
 
 .my-orders,
@@ -1627,24 +1656,24 @@ footer li {
   margin-left: 4px;
 }
 
-.sorting-button-up svg,
-.sorting-button-down svg {
+.sorting-button-up .sorting-button-up-icon,
+.sorting-button-down .sorting-button-down-icon {
   color: #000;
   opacity: 0.3;
 }
 
-.sorting-button-up svg:hover,
-.sorting-button-down svg:hover {
+.sorting-button-up:hover .sorting-button-up-icon,
+.sorting-button-down:hover .sorting-button-down-icon {
   opacity: 1;
 }
 
-.sorting-button-up svg:active,
-.sorting-button-down svg:active {
+.sorting-button-up:active .sorting-button-up-icon,
+.sorting-button-down:active .sorting-button-down-icon {
   color: #ee3643;
   opacity: 1;
 }
 
-.button-active svg{
+.button-active .sorting-button-up-icon{
   color: #ee3643;
   opacity: 1;
 }
@@ -2025,14 +2054,12 @@ footer li {
   width: 460px;
 }
 
-.modal-contact-us-container {
-  /* position: relative; */
-}
 
 .modal-contact-us {
   box-sizing: border-box;
-  position: absolute;
-  top: 2510px;
+  position: fixed;
+  overflow: auto;
+  top: 50%;
   left: 50%;
   margin-left: -300px;
   border-top: 7px solid #ff5256;
@@ -2105,9 +2132,8 @@ footer li {
 
 .modal-our-location {
   box-sizing: border-box;
-  position: absolute;
-  z-index: 10;
-  top: 1980px;
+  position: fixed;
+  top: 80%;
   left: 50%;
   margin-left: -470px;
   height: 446px;
@@ -2119,10 +2145,11 @@ footer li {
 
 .modal-add-to-basket {
   box-sizing: border-box;
-  position: absolute;
-  top: 411px;
+  position: fixed;
+  top: 50%;
   left: 50%;
   margin-left: -310px;
+  margin-top: -140px;
 }
 
 .modal-title {
