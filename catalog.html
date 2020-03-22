@@ -44,12 +44,10 @@
           <ul class="profile-user">
             <li>
               <a class="account-link" href="#">
-                <span>
-                  <svg class="account-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
-                    <path fill=currentColor d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z">
-                    </path>
-                  </svg>
-                </span>
+                <svg class="account-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                  <path fill=currentColor d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z">
+                  </path>
+                </svg>
               Равшан Джамшутович
               </a>
             </li>
@@ -376,7 +374,7 @@
   </footer>
 
   <!-- Товар добавлен в корзину -->
-  <section class="modal modal-add-to-basket">
+  <section class="modal modal-add-to-basket visually-hidden">
       <div class="modal-title">
         <img src="./img/icons/icon-mark.svg" alt="">
         <h2>Товар добавлен в корзину!</h2>
@@ -389,6 +387,26 @@
       </div>
       <button type="button" class="button-close" aria-label="Закрыть"></button>
   </section>
+
+  <script>
+    var buyButton = document.querySelector(".card-button-buy");
+    var modalBasket = document.querySelector(".modal-add-to-basket");
+    var closePopupBasket = modalBasket.querySelector(".button-close");
+
+    buyButton.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      modalBasket.classList.remove('visually-hidden');
+    
+    });
+
+    closePopupBasket.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      modalBasket.classList.add('visually-hidden');
+  });
+    
+  </script>
+
+
 </body>
 
 </html>

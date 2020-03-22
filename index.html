@@ -345,7 +345,7 @@
     </section>
   </footer>
 
-  <section class="modal modal-contact-us">
+  <section class="modal modal-contact-us visually-hidden">
     <div class="">
       <div class="modal-contact-us-top">
         <form method="POST" class="contact-us-form">
@@ -373,7 +373,7 @@
     </div>
   </section>
 
-  <section class="modal-our-location">
+  <section class="modal-our-location visually-hidden">
     <div class="">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <img src="./img/map/big-map.png" class="big-map-image"
@@ -381,6 +381,40 @@
       <button type="button" class="button-close" aria-label="Закрыть"></button>
     </div>
   </section>
+  
+  <script>
+    var ContactsButton = document.querySelector(".contacts-button");
+    var modalContactUs = document.querySelector(".modal-contact-us");
+    var closePopupContact = modalContactUs.querySelector(".button-close");
+
+    ContactsButton.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      modalContactUs.classList.remove('visually-hidden');
+    
+    });
+
+    closePopupContact.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      modalContactUs.classList.add('visually-hidden');
+  });
+
+
+    var MapButton = document.querySelector(".contacts-map-link");
+    var modalLocation = document.querySelector(".modal-our-location");
+    var closePopupLocation = modalLocation.querySelector(".button-close");
+
+    MapButton.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      modalLocation.classList.remove('visually-hidden');
+    
+    });
+
+    closePopupLocation.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      modalLocation.classList.add('visually-hidden');
+  });
+    
+  </script>
 
 </body>
 
