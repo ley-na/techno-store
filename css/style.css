@@ -348,49 +348,37 @@ a {
 }
 
 .profile-user {
-  position: relative;
-  background-color: #fff;
-  padding: 12px 68px 12px 45px;
-}
-
-.profile-user-name {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0;
+  margin: 0;
   font-size: 21px;
   line-height: 21px;
+}
+
+.profile-user .account-link {
+  width: 205px;
+  padding-left: 37px;
+}
+
+.profile-user a {
+  text-decoration: none;
+  display: block;
+  padding: 12px;
   color: #000;
+  background-color: #fff;
+  outline: none;
 }
 
-.profile-user-name::before {
-  content: "";
+.account-link svg {
   position: absolute;
-  top: 13px;
-  left: 11px;
-  width: 20px;
-  height: 20px;
-  background-image: url(../img/icons/icon-user.svg);
-  background-repeat: no-repeat;
-  opacity: 0.3;
+  transform: translate(-32px, 0px);
 }
 
-.profile-user-name::after {
-  content: "";
-  position: absolute;
-  top: 13px;
-  left: 268px;
-  width: 20px;
-  height: 20px;
-  background-image: url(../img/icons/icon-logout.svg);
-  background-repeat: no-repeat;
-  opacity: 0.3;
-}
-
-.profile-user-name:hover::before,
-.profile-user-name:hover::after {
-  opacity: 1;
-}
-
-.profile-user-name:active::before,
-.profile-user-name:active::after {
-  opacity: 0.3;
+.logout-link svg {
+  transform: translate(2px, 1px);
 }
 
 .profile-nav {
@@ -399,11 +387,12 @@ a {
   display: flex;
   padding-left: 17px;
   margin: 0;
+  margin-top: 4px;
   font-size: 16px;
 }
 
 .profile-nav-orders {
-  margin-right: 30px;
+  margin-right: 33px;
 }
 
 .my-orders,
@@ -417,8 +406,8 @@ a {
 .profile-nav .profile-nav-account::before {
   position: absolute;
   content: "";
-  top: 10px;
-  left: 104px;
+  top: 9px;
+  left: 107px;
   width: 5px;
   height: 5px;
   background-color: #32425c;
@@ -601,6 +590,15 @@ a {
   bottom: 30px;
   width: 195px;
   padding: 10px 0;
+  background-color: #ee3643;
+}
+
+.slider-button:hover {
+  background-color: #ca2c37;
+}
+
+.slider-button:active {
+  background-color: #ba2732;
 }
 
 .promo-block-right {
@@ -756,7 +754,7 @@ a {
 
 .card-name h3{
   padding: 0 15px 0 15px;
-  margin: 0 0 12px 0;
+  margin: 0 0 10px 0;
   color: #000;
   font-size: 18px;
   line-height: 20px;
@@ -824,8 +822,6 @@ a {
   padding: 7px 0;
   
   background-color: #63a63e;
-  border: 3px solid #63a63e;
-  border-bottom-color: #367315;
   border-radius:3px;
   
   color: white;
@@ -837,10 +833,15 @@ a {
   text-transform: uppercase;
 }
 
+.card-button-buy {
+  padding: 10px 3px;
+  box-shadow: inset 0px -3px 0 0 #367315;
+}
+
 .card-button-add {
   color: #32425c;
   background-color: #fff;
-  border-bottom-color: #63a63e;
+  border: 3px solid #63a63e;
 }
 
 .card-buttons {
@@ -855,10 +856,12 @@ a {
 
 .card-button-buy:hover,
 .card-button-buy:focus {
+  box-shadow: none;
   background-color: #5fbb2d;
 }
 
 .card-button-buy:active {
+  box-shadow: none;
   background-color: #518534;
 }
 
@@ -914,7 +917,7 @@ a {
   text-align: center;
 }
 
-.brands-list-link {
+.brands-list-item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -925,20 +928,20 @@ a {
   border: solid 1px #eaeaea;
 }
 
-.brands-list-link:nth-child(1),
-.brands-list-link:nth-child(5n) {
+.brands-list-item:nth-child(1),
+.brands-list-item:nth-child(5n) {
   margin-left: 0;
 }
 
-.brands-list-link:nth-child(-n + 4) {
+.brands-list-item:nth-child(-n + 4) {
   margin-bottom: 20px;
 }
 
-.brands-list-link:hover {
+.brands-list-item:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
-.brands-list-link:active {
+.brands-list-item:active {
   box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
   opacity: 0.3;
 }
@@ -1607,6 +1610,12 @@ footer li {
   opacity: 1;
 }
 
+.sorting-header-item:active {
+  border-bottom: none;
+  color: #ee3643;
+  opacity: 1;
+}
+
 .sorting-item-current {
   border-bottom: 0;
   color: #ee3643;
@@ -1626,6 +1635,12 @@ footer li {
 
 .sorting-button-up svg:hover,
 .sorting-button-down svg:hover {
+  opacity: 1;
+}
+
+.sorting-button-up svg:active,
+.sorting-button-down svg:active {
+  color: #ee3643;
   opacity: 1;
 }
 
@@ -1700,10 +1715,12 @@ footer li {
 }
 
 .price-filter-range-controls .price-toggle-min {
+  border-radius: 10px;
   left: -2px;
 }
 
 .price-filter-range-controls .price-toggle-max {
+  border-radius: 10px;
   left: 152px;
 }
 
@@ -1774,8 +1791,8 @@ footer li {
 .brands-filter-list label::before {
   content: "";
   position: absolute;
-  width: 23px;
-  height: 23px;
+  width: 27px;
+  height: 27px;
   background-image: url(../img/icons/checkbox-off.svg);
   background-repeat: no-repeat;
   opacity: 0.8;
@@ -1813,8 +1830,8 @@ footer li {
 .battery-filter-list label::before {
   content: "";
   position: absolute;
-  width: 23px;
-  height: 23px;
+  width: 27px;
+  height: 27px;
   background-image: url(../img/icons/radio-off.svg);
   background-repeat: no-repeat;
   opacity: 0.8;
@@ -1832,14 +1849,24 @@ footer li {
 
 .filter-checkbox:checked ~ label::before {
   width: 27px;
+  height: 27px;
   background-image: url(../img/icons/checkbox-on.svg);
   background-repeat: no-repeat;
 }
 
 .filter-radio:checked ~ label::before {
   width: 27px;
+  height: 27px;
   background-image: url(../img/icons/radio-on.svg);
   background-repeat: no-repeat;
+}
+
+.filter-checkbox:disabled ~ label::before {
+  opacity: 0.4;
+}
+
+.filter-radio:disabled ~ label::before {
+  opacity: 0.4;
 }
 
 .filter-button {
@@ -1918,7 +1945,7 @@ footer li {
 }
 
 .catalog-card:nth-child(n+4) {
-  margin-top: 20px;
+  margin-top: 23px;
 }
 
 .catalog-pagination-list {
@@ -1998,35 +2025,42 @@ footer li {
   width: 460px;
 }
 
+.modal-contact-us-container {
+  /* position: relative; */
+}
+
 .modal-contact-us {
-  position: relative;
-  /* top: 120px;
-  left: 50%; */
-  width: 620px;
-  /* margin-left: -310px; */
+  box-sizing: border-box;
+  position: absolute;
+  top: 2510px;
+  left: 50%;
+  margin-left: -300px;
   border-top: 7px solid #ff5256;
   background-color: #fff;
   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
 }
 
 .modal-contact-us-top {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   padding: 55px 80px 23px 80px;
 }
 
-.contact-us-form {
+.modal-data-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 }
+
 
 .contact-us-form_item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-right: 20px;
   margin-bottom: 20px;
-  width: 220px;
+}
+
+.contact-us-form:nth-child(3) {
+  margin-right: 0;
+  width: 460px;
 }
 
 .contact-us-form_item label {
@@ -2036,23 +2070,26 @@ footer li {
   line-height: 18px;
 }
 
-.contact-us-form_item input[type="text"] {
+.contact-us-form_item input[type="text"],
+.contact-us-form_item input[type="email"] {
   height: 38px;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 .contact-us-form_item input, 
 .contact-us-form_item textarea {
   padding-left: 16px;
-  width: 100%;
   font-family: "PTSans", Arial, sans-serif;
   color: #a9a9a9;
   border: solid 2px #dee3e4;
   border-radius: 4px;
 }
 
-.modal-contact-us .contact-us-form_item:last-child {
-  width: 100%;
+.contact-us-form_item input[type="email"] {
+  width: 220px;
 }
+
 
 .modal-contact-us-bottom {
   padding: 37px 80px;
@@ -2067,11 +2104,25 @@ footer li {
 }
 
 .modal-our-location {
-  position: relative;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 10;
+  top: 1980px;
+  left: 50%;
+  margin-left: -470px;
+  height: 446px;
+}
+
+.modal-our-location img {
+  box-shadow: 0px 0px 16px 8px rgba(47, 42, 43, 0.5);
 }
 
 .modal-add-to-basket {
-  position: relative;
+  box-sizing: border-box;
+  position: absolute;
+  top: 411px;
+  left: 50%;
+  margin-left: -310px;
 }
 
 .modal-title {
@@ -2133,7 +2184,9 @@ footer li {
   background-color: #fff;
 }
 
-.modal-add-to-basket .button-close {
+.modal-add-to-basket .button-close,
+.modal-contact-us .button-close,
+.modal-our-location .button-close {
   position: absolute;
   top: 0;
   right: 0;
@@ -2142,7 +2195,9 @@ footer li {
   background: none;
 }
 
-.modal-add-to-basket .button-close::after {
+.modal-add-to-basket .button-close::after,
+.modal-contact-us .button-close::after,
+.modal-our-location .button-close::after {
   content: "";
   position: absolute;
   top: 9px;

@@ -187,14 +187,14 @@
         <a class="brands-button button button-red" href="">Все производители</a>
       </div>
       <ul class="brands-list">
-        <li class="brands-list-link"><a class="brands-list-item" href=""><img src="./img/brands/bosch.png" width="126" height="37" alt="BOSCH"></a></li>
-        <li class="brands-list-link"><a class="brands-list-item" href=""><img src="./img/brands/makita.png" width="123" height="40" alt="Makita"></a></li>
-        <li class="brands-list-link"><a class="brands-list-item" href=""><img src="./img/brands/dewalt.png" width="146" height="44" alt="DeWALT"></a></li>
-        <li class="brands-list-link"><a class="brands-list-item" href=""><img src="./img/brands/interskop.png" width="200" height="88" alt="Интерскол"></a></li>
-        <li class="brands-list-link"><a class="brands-list-item" href=""><img src="./img/brands/hitachi.png" width="169" height="31" alt="Hitachi"></a></li>
-        <li class="brands-list-link"><a class="brands-list-item" href=""><img src="./img/brands/lg.png" width="121" height="73" alt="LG"></a></li>
-        <li class="brands-list-link"><a class="brands-list-item" href=""><img src="./img/brands/aeg.png" width="151" height="96" alt="AEG"></a></li>
-        <li class="brands-list-link"><a class="brands-list-item" href=""><img src="./img/brands/metabo.png" width="204" height="69" alt="Metabo"></a></li>
+        <li class="brands-list-item"><a class="brands-list-link" href=""><img src="./img/brands/bosch.png" width="126" height="37" alt="BOSCH"></a></li>
+        <li class="brands-list-item"><a class="brands-list-link" href=""><img src="./img/brands/makita.png" width="123" height="40" alt="Makita"></a></li>
+        <li class="brands-list-item"><a class="brands-list-link" href=""><img src="./img/brands/dewalt.png" width="146" height="44" alt="DeWALT"></a></li>
+        <li class="brands-list-item"><a class="brands-list-link" href=""><img src="./img/brands/interskop.png" width="200" height="88" alt="Интерскол"></a></li>
+        <li class="brands-list-item"><a class="brands-list-link" href=""><img src="./img/brands/hitachi.png" width="169" height="31" alt="Hitachi"></a></li>
+        <li class="brands-list-item"><a class="brands-list-link" href=""><img src="./img/brands/lg.png" width="121" height="73" alt="LG"></a></li>
+        <li class="brands-list-item"><a class="brands-list-link" href=""><img src="./img/brands/aeg.png" width="151" height="96" alt="AEG"></a></li>
+        <li class="brands-list-item"><a class="brands-list-link" href=""><img src="./img/brands/metabo.png" width="204" height="69" alt="Metabo"></a></li>
       </ul>
     </section>
     <section class="services-container">
@@ -238,9 +238,9 @@
               <img src="./img/services/credit.png" alt="Кредит">
               <div class="credit-button button button-red">
                 <a href="">Отправить заявку</a>
+              </div>
             </div>
           </div>
-          </ul>
         </div>
       </div>
     </section>
@@ -291,7 +291,7 @@
         <div class="footer-top-item">
           <div class="footer-logo logo">
             <a href="index.html">
-              <img src="./img/logo/logo-technomart.svg" width="138px" height="23px" alt="">
+              <img src="./img/logo/logo-technomart.svg" width="138" height="23" alt="">
             </a>
           </div>
           <div class="footer-top-contacts">
@@ -346,37 +346,40 @@
   </footer>
 
   <section class="modal modal-contact-us">
-    <div class="modal-contact-us-top">
-      <form method="POST" class="contact-us-form">
-        <div class="contact-us-form_item">
-          <label for="contact-us-form_username">Ваше имя:</label>
-          <input type="text" id="contact-us-form_username" name="contact-us-form_username" placeholder="Имя Фамилия" class="contact-us-form_username" required>
-        </div>
-        <div class="contact-us-form_item">
-          <label for="contact-us-form_email">Ваш email:</label>
-          <input type="email" id="contact-us-form_email" name="contact-us-form_email" placeholder="email@example.com" class="contact-us-form_email" required>
-        </div>
-        <div class="contact-us-form_item">
-          <label for="contact-us-form_comment">Текст письма</label>
-          <textarea name="contact-us-form_comment" id="contact-us-form_comment" class="contact-us-form_comment"
-            cols="30" rows="10" placeholder="В свободной форме" required>
-          </textarea>
-        </div>
-      </form>
+    <div class="">
+      <div class="modal-contact-us-top">
+        <form method="POST" class="contact-us-form">
+          <div class="modal-data-container">
+            <div class="contact-us-form_item username">
+              <label for="contact-us-form_username">Ваше имя:</label>
+              <input type="text" id="contact-us-form_username" name="contact-us-form_username" placeholder="Имя Фамилия" required>
+            </div>
+            <div class="contact-us-form_item email">
+              <label for="contact-us-form_email">Ваш email:</label>
+              <input type="email" id="contact-us-form_email" name="contact-us-form_email" placeholder="email@example.com" required>
+            </div>
+          </div>
+          <div class="contact-us-form_item comment">
+            <label for="contact-us-form_comment">Текст письма</label>
+            <textarea name="contact-us-form_comment" id="contact-us-form_comment" rows="7" placeholder="В свободной форме" required>
+            </textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-contact-us-bottom">
+        <button type="submit" class="contact-us-form_button button-red">Отправить</button>
+      </div>
+      <button type="button" class="button-close" aria-label="Закрыть"></button>
     </div>
-    <div class="modal-contact-us-bottom">
-      <button type="submit" class="contact-us-form_button button-red">Отправить</button>
-    </div>
-    <button type="button" class="button-close" aria-label="Закрыть"></button>
   </section>
 
   <section class="modal-our-location">
     <div class="">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-    <img src="./img/map/big-map.png" class="big-map-image"
+      <img src="./img/map/big-map.png" class="big-map-image"
       alt="Мы находимся по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      <button type="button" class="button-close" aria-label="Закрыть"></button>
     </div>
-    <button type="button" class="button-close" aria-label="Закрыть"></button>
   </section>
 
 </body>
