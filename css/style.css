@@ -2152,6 +2152,7 @@ footer li {
 .modal-add-to-basket {
   box-sizing: border-box;
   position: fixed;
+  z-index: 5;
   top: 50%;
   left: 50%;
   margin-left: -310px;
