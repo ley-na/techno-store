@@ -10,11 +10,12 @@ closeModalBasket.addEventListener('click', function(evt) {
 });
 
 
-buyButtons.forEach(button => {
+for (var index = 0; index < buyButtons.length; index++) {
+    const button = buyButtons[index];
     button.addEventListener('click', function(evt) {
         evt.preventDefault();
         modalBasket.classList.remove('visually-hidden');   
     } 
     
     );
-});
+}

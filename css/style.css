@@ -14,7 +14,7 @@ body {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
+  
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -68,6 +68,7 @@ a {
 }
 
 .header-logo {
+  position: relative;
   width: 220px;
   padding-top: 13px;
 }
@@ -906,11 +907,15 @@ a {
 
 .card-buttons {
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: -1;
 }
 
 .card:hover .card-buttons {
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1;
 }
 
@@ -1383,7 +1388,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: flex-start;
 }
@@ -1895,17 +1899,20 @@ footer li {
   margin-bottom: 20px;
 }
 
+.brands-filter-list label {
+  position: relative;
+}
+
 .brands-filter-list label::before {
   content: "";
   position: absolute;
   width: 27px;
   height: 27px;
+  top: -2px;
+  left: -35px;
   background-image: url(../img/icons/checkbox-off.svg);
   background-repeat: no-repeat;
   opacity: 0.8;
-  -webkit-transform: translate(-35px, -2px);
-  -ms-transform: translate(-35px, -2px);
-  transform: translate(-35px, -2px);
 }
 
 .battery-filter {
@@ -1936,17 +1943,20 @@ footer li {
   line-height: 20px;
 }
 
+.battery-filter-list label {
+  position: relative;
+}
+
 .battery-filter-list label::before {
   content: "";
   position: absolute;
   width: 27px;
   height: 27px;
+  top: -6px;
+  left: -35px;
   background-image: url(../img/icons/radio-off.svg);
   background-repeat: no-repeat;
   opacity: 0.8;
-  -webkit-transform: translate(-35px, -2px);
-  -ms-transform: translate(-35px, -2px);
-  transform: translate(-35px, -2px);
 }
 
 .battery-filter-list li {
@@ -1961,6 +1971,8 @@ footer li {
 .filter-checkbox:checked ~ label::before {
   width: 27px;
   height: 27px;
+  top: -2px;
+  left: -35px;
   background-image: url(../img/icons/checkbox-on.svg);
   background-repeat: no-repeat;
 }
@@ -1968,6 +1980,8 @@ footer li {
 .filter-radio:checked ~ label::before {
   width: 27px;
   height: 27px;
+  top: -6px;
+  left: -35px;
   background-image: url(../img/icons/radio-on.svg);
   background-repeat: no-repeat;
 }
@@ -2049,6 +2063,8 @@ footer li {
 
 .catalog-card:hover .card-buttons {
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1;
 }
 
