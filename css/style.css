@@ -711,7 +711,6 @@ a {
 }
 
 .promo-button {
-  display: inline-block;
   width: 135px;
   padding: 10px 0;
   margin: 12px 0 0 24px;
@@ -727,95 +726,66 @@ a {
   font-weight: normal;
 }
 
-.materials-block {
-  position: relative;
+.materials-block {  
+  padding-right: 100px;
+  box-sizing: border-box;
   background-color: #ffbf47;
   margin-right: 20px;
-}
-
-.materials-block::after {
-  content: "";
-  position: absolute;
-  top: 30px;
-  right: 42px;
-  width: 45px;
-  height: 68px;
   background-image: url(../img/icons/promo/icon-tin.svg);
   background-repeat: no-repeat;
   background-size: 45px;
+  overflow: hidden;
+  background-position: 213px center;
 }
 
 .instruments-block {
-  position: relative;
+  padding-right: 100px;
+  box-sizing: border-box;
   background-color: #3bbce3;
   margin-right: 20px;
-}
-
-.instruments-block::after {
-  content: "";
-  position: absolute;
-  top: 33px;
-  right: 28px;
-  width: 75px;
-  height: 60px;
   background-image: url(../img/icons/promo/icon-drill.svg);
   background-repeat: no-repeat;
   background-size: 75px;
+  overflow: hidden;
+  background-position: 198px center;
 }
 
 .machinery-block {
-  position: relative;
+  padding-right: 100px;
+  box-sizing: border-box;
   background-color: #dc91d8;
   margin-right: 20px;
-}
-
-.machinery-block::after {
-  content: "";
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  width: 80px;
-  height: 65px;
   background-image: url(../img/icons/promo/icon-tractor.svg);
   background-repeat: no-repeat;
   background-size: 80px;
+  overflow: hidden;
+  background-position: 190px center;
 }
 
 .discounts-block {
-  position: relative;
+  padding-right: 100px;
+  box-sizing: border-box;
   background-color: #8ed78f;
   margin-bottom: 20px;
-}
-
-.discounts-block::after {
-  content: "";
-  position: absolute;
-  top: 25px;
-  right: 44px;
-  width: 60px;
-  height: 80px;
   background-image: url(../img/icons/promo/icon-basket.svg);
   background-repeat: no-repeat;
   background-size: 60px;
+  overflow: hidden;
+  background-position: 196px center;
 }
 
 .delivery-block {
-  position: relative;
+  padding-right: 100px;
+  box-sizing: border-box;
   background-color: #ffcf47;
   margin-right: 20px;
-}
-
-.delivery-block::after {
-  content: "";
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  width: 80px;
-  height: 65px;
   background-image: url(../img/icons/promo/icon-bus.svg);
   background-repeat: no-repeat;
   background-size: 80px;
+  overflow: hidden;
+  background-position: 190px center;
 }
+
 
 .button-red:hover {
   position: relative;
