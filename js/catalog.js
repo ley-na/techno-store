@@ -4,17 +4,17 @@ var modalBasket = document.querySelector(".modal-add-to-basket");
 var closeModalBasket = modalBasket.querySelector(".button-close");
 
 
-closeModalBasket.addEventListener('click', function(evt) {
+closeModalBasket.addEventListener("click", function(evt) {
   evt.preventDefault();
-  modalBasket.classList.add('visually-hidden');
+  modalBasket.classList.add("visually-hidden");
 });
 
 
 for (var index = 0; index < buyButtons.length; index++) {
-    const button = buyButtons[index];
-    button.addEventListener('click', function(evt) {
+    var button = buyButtons[index];
+    button.addEventListener("click", function(evt) {
         evt.preventDefault();
-        modalBasket.classList.remove('visually-hidden');   
+        modalBasket.classList.remove("visually-hidden");   
     } 
     
     );
